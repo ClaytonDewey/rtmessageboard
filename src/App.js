@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SketchPicker } from "react-color";
 import { Input, Button } from 'antd';
-import { DataStore } from "aws-amplify";
+import { DataStore } from "@aws-amplify/datastore";
 import { Message } from './models';
 
 const initialState = { color: '#000000', title: '' };
@@ -80,12 +80,12 @@ const App = () => {
   )
 }
 
-const container = { width: '100%', padding: 40, maxWidth: 900 };
-const input = { marginBottom: 10 };
-const button = { marginBottom: 10 };
-const heading = { fontWeight: 'normal', fontSize: 40 };
-const messageBg = { backgroundColor: 'white' };
-const messageStyle = { padding: '20px', marginTop: 7, borderRadius: 4 };
-const messageTitle = { margin: 0, padding: 9, fontSize: 20 };
+const container = { width: '100%', padding: 40, maxWidth: 900 }
+const input = { marginBottom: 10 }
+const button = { marginBottom: 10 }
+const heading = { fontWeight: 'normal', fontSize: 40 }
+const messageBg = { backgroundColor: 'white' }
+const messageStyle = { padding: '20px', marginTop: 7, borderRadius: 4 }
+const messageTitle = { margin: 0, padding: 9, fontSize: 20  }
 
 export default App;
